@@ -17,6 +17,8 @@ body{
     width: 540px;
     margin: auto;
     display: flex; 
+    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
     perspective: 1000px;
 
@@ -65,7 +67,7 @@ body{
 
 /*modal*/
 #gameOver{
-    height: 100vh;
+    height: 120vh;
     width: 100vw;
     background: rgba(0,0,0,0.9);
     display: none;
@@ -75,6 +77,11 @@ body{
     position: absolute;
     color: #fff;
     flex-direction: column;
+    top: 0;
+    left: 0;
+}
+.congratulations {
+    text-align: center;
 }
 
 #restart{
@@ -93,5 +100,11 @@ body{
     transform: scale(0.95);
     transition: transform 0.5s;
     background-color: rgba(255, 255, 0, 0.9);
+}
+
+@media (max-width: 700px){
+    #gameOver {
+        font-size: 40px;
+    }
 }
 
